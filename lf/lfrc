@@ -1,0 +1,9 @@
+set hidden
+
+set ratios 1:1
+
+map <enter> $nvim "$f"
+
+map s :cd /mnt/c/Users/SergeyYevtushik/Documents/Source
+map t :cd /mnt/c/tmp
+map H :cd ~

@@ -1,0 +1,48 @@
+;; Kanata Configuration for Custom Three-Layer Keyboard Layout
+;; This config implements the layout shown in the uploaded image
+
+(defcfg
+  process-unmapped-keys yes
+  danger-enable-cmd no
+  sequence-timeout 2000
+  sequence-input-mode visible-backspaced
+  sequence-backtrack-modcancel no
+  log-layer-changes no
+)
+
+(defsrc
+  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    
+  caps a    s    d    f    g    h    j    k    l    ;    '    \   ret
+  lsft grv  z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lalt lmet            spc            rmet ralt
+)
+
+(defalias
+  nav (tap-hold 200 200 XX (layer-while-held navigation))
+  sym (tap-hold 200 200 XX (layer-while-held symbols))
+)
+
+(deflayer base
+  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    bspc XX    
+  lctl a    s    d    f    g    h    j    k    l    ret  esc  XX   ret
+  lsft @nav z    x    c    v    b    n    m    del  rsft @sym rsft
+  lctl lalt lmet            spc            rmet ralt
+)
+
+(deflayer navigation
+  1    2    3    4    5    6    7    8    9    0     -    =   bspc
+  tab  XX   XX   XX   XX   XX   XX   S-6  S-8  /     '    XX  XX    
+  caps XX   S-,  S-.  C-c  C-v  left down up   right ;    S-' XX   ret
+  lsft XX   XX   XX   XX   XX   XX   S-2  S-;  ,     .    S-- rsft
+  lctl lalt lmet            spc            rmet ralt
+)
+
+(deflayer symbols
+  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  grv  S-9  S-0  -    S-=  XX   XX   XX   XX   XX   XX   XX    
+  caps S-1  S-[  S-]  =    S-\  S-7  S-6  S-4  S-3  XX   XX   XX   ret
+  lsft \    S-`  [    ]    S-5  XX   XX   XX   XX   XX   XX   rsft
+  lctl lalt lmet            spc            rmet ralt
+)

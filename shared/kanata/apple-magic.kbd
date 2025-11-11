@@ -24,25 +24,25 @@
 )
 
 (deflayer base
-  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    bspc XX    
-  lctl a    s    d    f    g    h    j    k    l    ret  esc  XX   ret
+  1    2    3    4    5    6    7    8    9    0    XX   XX   XX
+  tab  q    w    e    r    t    y    u    i    o    p    esc  XX    
+  lctl a    s    d    f    g    h    j    k    l    ret  bspc XX   XX
   lsft @nav z    x    c    v    b    n    m    del  rsft @sym rsft
   lctl lalt lmet            spc            rmet ralt
 )
 
 (deflayer navigation
-  1    2    3    4    5    6    7    8    9    0     -    =   bspc
-  tab  XX   XX   XX   XX   XX   '    S-6  S-8  /     S--  XX  XX    
-  caps XX   S-,  S-.  C-c  C-v  left down up   right ;    S-' XX   ret
-  lsft XX   XX   XX   XX   XX   XX   S-2  S-;  ,     .    ? rsft
+  1    2    3    4    5    6    7    8    9    0     XX   XX   XX
+  tab  XX   XX   XX   XX   XX   XX   '    S-8  /     S--  XX  XX    
+  caps XX   S-,  S-.  C-c  C-v  left down up   right ;    S-' XX   XX
+  lsft XX   XX   XX   XX   XX   XX   S-2  S-;  ,     .    S-/ rsft
   lctl lalt lmet            spc            rmet ralt
 )
 
 (deflayer symbols
-  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  1    2    3    4    5    6    7    8    9    0    XX   XX   XX
   tab  grv  S-9  S-0  -    S-=  XX   XX   XX   XX   XX   XX   XX    
-  caps S-1  S-[  S-]  =    S-\  S-7  S-6  S-4  S-3  XX   XX   XX   ret
+  caps S-1  S-[  S-]  =    S-\  S-7  S-6  S-4  S-3  XX   XX   XX   XX
   lsft \    S-`  [    ]    S-5  XX   XX   XX   XX   XX   XX   rsft
   lctl lalt lmet            spc            rmet ralt
 )

@@ -4,4 +4,4 @@ c:\Program Files\kanata>kanata --cfg "C:\Users\SergeyYevtushik\Documents\Source\
 remapping in wsl works well only if kanata runs on the same admin privelages level as wsl terminal. if wsl started "as admin" then kanata should be started "as admin" as well.
 
 ## macos\linux
-/usr/local/bin/kanata --cfg ~/.config/kanata/apple-magic.kbd
+sudo /usr/local/bin/kanata --cfg ~/.config/kanata/apple-magic.kbd

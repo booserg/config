@@ -33,9 +33,9 @@
 
 (deflayer navigation
   1    2    3    4    5    6    7    8    9    0     -    =   bspc
-  tab  XX   XX   XX   XX   XX   XX   S-6  S-8  /     '    XX  XX    
+  tab  XX   XX   XX   XX   XX   '    S-6  S-8  /     S--  XX  XX    
   caps XX   S-,  S-.  C-c  C-v  left down up   right ;    S-' XX   ret
-  lsft XX   XX   XX   XX   XX   XX   S-2  S-;  ,     .    S-- rsft
+  lsft XX   XX   XX   XX   XX   XX   S-2  S-;  ,     .    ? rsft
   lctl lalt lmet            spc            rmet ralt
 )
 
